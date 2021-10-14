@@ -1,0 +1,6 @@
+---
+- name: Download Civix
+  get_url:
+    url: "{{ civix_url }}"
+    dest: "{{ civix_bin_path }}"
+    mode: '0777'
